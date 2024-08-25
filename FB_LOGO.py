@@ -1,29 +1,26 @@
 import turtle
 import math
 
-
 def draw_curved_triangle():
     turtle.penup()
     turtle.color("#000000", "#163962")
     turtle.pensize(2)
     turtle.begin_fill()
-    turtle.goto(-126, 90)  # Yayın başlangıç noktasına git
+    turtle.goto(-126, 90)  # Move to the starting point
     turtle.pendown()
-    turtle.circle(145, 60)  # Yarıçapı 100 ve açı 90 derece olan bir daire çiz
+    turtle.circle(145, 60)  # Draw an arc with radius 145 and 60 degrees
     ending_x, ending_y = turtle.pos()
 
-    # Simetrik yay çizimi
-    turtle.goto(ending_x, ending_y)  # İlk yayının bitiş noktasına git
-    # turtle.setheading(200)  # Simetrik yay için yönü değiştir
+    # Draw the symmetric arc
+    turtle.goto(ending_x, ending_y)  # Go to the end point of the first arc
     turtle.right(120)
-    turtle.circle(145, 60)  # Negatif yarıçap ile simetrik yay çiz
+    turtle.circle(145, 60)  # Draw the symmetric arc with negative radius
     ending_x, ending_y = turtle.pos()
-    # Alt kısımları birleştirecek düz çizgi
-    turtle.goto(ending_x, ending_y)  # Sol yayının bitiş noktasına git
+    # Draw a straight line to connect the bottom parts
+    turtle.goto(ending_x, ending_y)  # Go to the end point of the left arc
     turtle.goto(-126, 90)
     turtle.penup()
     turtle.end_fill()
-
 
 def draw_bottom_shield():
     turtle.penup()
@@ -62,20 +59,16 @@ def draw_yellow_line():
     turtle.end_fill()
 
 def draw_filled_star(size, color):
-    # size of star
     turtle.penup()
-    turtle.goto(-85, -125)  # Yıldızı sayfanın ortasına koymak için
+    turtle.goto(-85, -125)  # Place the star at the center of the page
     turtle.pendown()
     size = 10
-    # object width
     turtle.width(4)
-    # angle to form star
     angle = 120
-    # color to fill
     turtle.fillcolor("BLACK")
     turtle.begin_fill()
 
-    # form star
+    # Draw the star
     for side in range(5):
         turtle.forward(size)
         turtle.right(angle)
@@ -84,20 +77,16 @@ def draw_filled_star(size, color):
     turtle.end_fill()
 
 def draw_filled_star2(size, color):
-    # size of star
     turtle.penup()
-    turtle.goto(85, -125)  # Yıldızı sayfanın ortasına koymak için
+    turtle.goto(85, -125)  # Place the star at the center of the page
     turtle.pendown()
     size = 10
-    # object width
     turtle.width(4)
-    # angle to form star
     angle = 120
-    # color to fill
     turtle.fillcolor("BLACK")
     turtle.begin_fill()
 
-    # form star
+    # Draw the star
     for side in range(5):
         turtle.forward(size)
         turtle.right(angle)
