@@ -22,5 +22,3 @@ To run this code, you need to have Python installed on your system. The `turtle`
    git clone https://github.com/hsynuzm/FB-LOGO
 ![img_1.png](img_1.png)
 
-
-Thanks For Help @yunusornek
