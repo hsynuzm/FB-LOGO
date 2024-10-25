@@ -26,6 +26,6 @@ To run this code, you need to have Python installed on your system. The `turtle`
 
 A big thank you to the following individuals who contributed to the success of this project:
 
-- @yunusornek - for providing insightful feedback and helping with the backend architecture.
+- @yunusornek and @MathematicianGoat - for providing insightful feedback and helping with the backend architecture.
 
 Your support made this project possible!
